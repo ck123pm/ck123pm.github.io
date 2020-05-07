@@ -1,6 +1,6 @@
 check_result=`docker container ls -a|grep newblog |awk '{print $1}'`
 
-docker exec -it "$check_result" "hexo g && hexo d"
+docker exec -it "$check_result" bash -c "hexo g && hexo d"
 msg=$1
 if [ -n "$msg" ]; then
    git add -A

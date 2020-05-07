@@ -1,4 +1,4 @@
-check_result=`docker container ls -a|grep newblog`
+check_result=`docker container ls -a|grep newblog |awk '{print $1}'`
 
 docker exec -it "$check_result" hexo d
 msg=$1

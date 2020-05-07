@@ -7,7 +7,7 @@ if [ -n "$msg" ]; then
    git commit -m"${msg}"
    git pull
    git status
-   echo "完成add、commit、pull，别忘了push"
+   git push origin blogData
 else
     echo "请添加注释再来一遍"
 fi

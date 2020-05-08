@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="这是一篇测试文章#include &lt;string&gt;">
+  <meta name="description" content="前言 之前用hexo+next在自己的笔记本上搭过一次，那时候对npm,nodejs都不太了解，更别提docker了。各种环境依赖，折腾半天总算搞好了(搭完之后真的不想再弄第二遍了)。但是写文章，发布都必须用自己的那台笔记本，此外还有一堆命令,hexo new post, hexo g, hexo d等，一段时间后总是忘记了，还是不够方便，当时就一直希望能实现快速搭建博客环境，并且能备份主题配置、">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo test">
+<meta property="og:title" content="利用docker快速搭建hexo博客环境并实现多机同步">
 <meta property="og:url" content="http://yoursite.com/2020/05/07/new-post/index.html">
 <meta property="og:site_name" content="ck123pm&#39;s blog">
-<meta property="og:description" content="这是一篇测试文章#include &lt;string&gt;">
+<meta property="og:description" content="前言 之前用hexo+next在自己的笔记本上搭过一次，那时候对npm,nodejs都不太了解，更别提docker了。各种环境依赖，折腾半天总算搞好了(搭完之后真的不想再弄第二遍了)。但是写文章，发布都必须用自己的那台笔记本，此外还有一堆命令,hexo new post, hexo g, hexo d等，一段时间后总是忘记了，还是不够方便，当时就一直希望能实现快速搭建博客环境，并且能备份主题配置、">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-07T15:48:00.000Z">
-<meta property="article:modified_time" content="2020-05-08T04:16:20.000Z">
+<meta property="article:modified_time" content="2020-05-08T05:17:01.000Z">
 <meta property="article:author" content="ck123pm">
 <meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Hexo test | ck123pm's blog</title>
+  <title>利用docker快速搭建hexo博客环境并实现多机同步 | ck123pm's blog</title>
   
 
 
@@ -184,7 +184,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo test
+          利用docker快速搭建hexo博客环境并实现多机同步
         </h1>
 
         <div class="post-meta">
@@ -201,7 +201,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-08 04:16:20" itemprop="dateModified" datetime="2020-05-08T04:16:20+00:00">2020-05-08</time>
+                <time title="修改时间：2020-05-08 05:17:01" itemprop="dateModified" datetime="2020-05-08T05:17:01+00:00">2020-05-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -214,7 +214,7 @@
             </span>
 
           
-            <span id="/2020/05/07/new-post/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo test" title="阅读次数">
+            <span id="/2020/05/07/new-post/" class="post-meta-item leancloud_visitors" data-flag-title="利用docker快速搭建hexo博客环境并实现多机同步" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -240,7 +240,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>49</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -259,10 +259,30 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="这是一篇测试文章"><a href="#这是一篇测试文章" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h2><p><code>#include &lt;string&gt;</code></p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>之前用hexo+next在自己的笔记本上搭过一次，那时候对<code>npm,nodejs</code>都不太了解，更别提<code>docker</code>了。各种环境依赖，折腾半天总算搞好了(搭完之后真的不想再弄第二遍了)。但是写文章，发布都必须用自己的那台笔记本，此外还有一堆命令,<code>hexo new post, hexo g, hexo d</code>等，一段时间后总是忘记了，还是不够方便，当时就一直希望能实现快速搭建博客环境，并且能备份主题配置、文章源文件等。最近一年新公司接触了<code>docker</code>和大前端的一些技术，网上也搜到了一些利用docker搭建博客环境的教程，因此决定把自己的Blog重新弄起来。</p>
+</blockquote>
 <a id="more"></a>
-<p>今天先到这里<br>sdf<br>sdfeeeesdf</p>
-
+<h2 id="实现方案"><a href="#实现方案" class="headerlink" title="实现方案"></a>实现方案</h2><p>环境依赖：</p>
+<ol>
+<li>docker</li>
+<li>git</li>
+</ol>
+<h3 id="快速搭建博客环境"><a href="#快速搭建博客环境" class="headerlink" title="快速搭建博客环境"></a>快速搭建博客环境</h3><p>这个利用docker就可以很容易实现了，不想重新造轮子于是在github上搜了一些，最终使用了<a href="https://github.com/spurin/docker-hexo" target="_blank" rel="noopener">spurin/docker-hexo</a>.</p>
+<p>主要看中了他这个镜像的几个优点：</p>
+<ol>
+<li>自带hexo-admin插件</li>
+<li>自动生成ssh秘钥（方便后面提交github用）</li>
+<li>所有配置文件及博客源文件都映射到宿主机，可以方便利用git分支，实现备份同步</li>
+</ol>
+<p>为了偷懒，直接用他在dockerhub上的打包好的镜像。<br>本地运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name&#x3D;myblog \</span><br><span class="line">-e HEXO_SERVER_PORT&#x3D;4000 \</span><br><span class="line">-e GIT_USER&#x3D;&quot;Your Name&quot; \</span><br><span class="line">-e GIT_EMAIL&#x3D;&quot;your.email@domain.tld&quot; \</span><br><span class="line">-v &lt;your host path&gt;:&#x2F;app \</span><br><span class="line">-p 4000:4000 \</span><br><span class="line">spurin&#x2F;hexo</span><br></pre></td></tr></table></figure>
+<p>首次启动会去拉镜像，容器起来后还会去做一些配置，生成默认博客项目等，所以会有一点慢。可以通过<code>docker logs -f &lt;container id&gt;</code>来查看日志。</p>
+<p>等服务完全初始化完成，浏览器打开<code>localhost:4000</code>就可以看到hexo的博客主页了。浏览器打开<code>localhost:4000/admin</code>即可进入hexo-admin的页面。</p>
+<p>在hexo-admin上可以新增、修改、删除文章，详细用法可以查询其他文章。</p>
+<h3 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h3><p>在上文中我们创建容器时，填入了我们的username和邮箱地址，容器启动时会根据这个信息生成对应的ssh公钥和私钥。在github个人setting里面，可以将公钥添加到ssh key列表中。以后我们<code>git push</code>的时候就可以不用输入用户名密码了。这部分配置，可以查询其他文章，有空我再补充到该文当中。</p>
+<p>配置完git相关之后，执行<code>docker exec -it myblog hexo d</code>即可部署到github上。</p>
+<h3 id="多机备份和同步"><a href="#多机备份和同步" class="headerlink" title="多机备份和同步"></a>多机备份和同步</h3>
     </div>
 
     
@@ -336,7 +356,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#这是一篇测试文章"><span class="nav-number">1.</span> <span class="nav-text">这是一篇测试文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现方案"><span class="nav-number">2.</span> <span class="nav-text">实现方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速搭建博客环境"><span class="nav-number">2.1.</span> <span class="nav-text">快速搭建博客环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到github上"><span class="nav-number">2.2.</span> <span class="nav-text">部署到github上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多机备份和同步"><span class="nav-number">2.3.</span> <span class="nav-text">多机备份和同步</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -406,7 +426,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">1k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

@@ -1,7 +1,7 @@
 title: 利用docker快速搭建hexo博客环境并实现多机同步
 author: ck123pm
 tags:
-  - c++
+  - hexo
 categories:
   - Tech
 date: 2020-05-07 15:48:00
@@ -46,8 +46,3 @@ spurin/hexo
 配置完git相关之后，执行`docker exec -it myblog hexo d `即可部署到github上。
 
 ### 多机备份和同步
-
-
-
-
-

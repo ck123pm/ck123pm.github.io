@@ -8,7 +8,7 @@ subtitle: ''
 description: 'Time waits for no one'
 keywords:
 author: ck123pm
-language: zh-Hans
+language: zh-CN
 timezone: ''
 
 # URL
@@ -30,6 +30,12 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+
+# count_word
+symbols_count_time:
+  symbols: true # 文章字数
+  time: true # 阅读时长
+  total_symbols: true # 所有文章总字数
 
 # Writing
 new_post_name: :title.md # File name of new posts

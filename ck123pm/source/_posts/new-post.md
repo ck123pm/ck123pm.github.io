@@ -46,3 +46,4 @@ spurin/hexo
 配置完git相关之后，执行`docker exec -it myblog hexo d `即可部署到github上。
 
 ### 多机备份和同步
+我们主要有两个目标

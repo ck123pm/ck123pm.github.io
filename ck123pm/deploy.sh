@@ -5,7 +5,7 @@ msg=$1
 if [ -n "$msg" ]; then
    git add -A
    git commit -m"${msg}"
-   git pull
+   git pull origin blogData
    git status
    git push origin blogData
 else

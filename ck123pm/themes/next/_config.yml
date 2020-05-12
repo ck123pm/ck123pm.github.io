@@ -600,6 +600,26 @@ disqusjs:
   apikey: # Register new application from https://disqus.com/api/applications/
   shortname: # See: https://disqus.com/admin/settings/general/
 
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-wanko
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.7
+
 # Changyan
 changyan:
   enable: false

@@ -1,13 +1,11 @@
----
 title: JSON数据自动生成C++结构体
-date: 2019-04-05 22:16:50
-tags: 
-    - python
-    - json
-    - c++
+tags:
+  - python
+  - json
+  - c++
 categories: 编程
+date: 2019-04-05 22:16:50
 ---
-
 > 生成的c++结构体基于nlohmann/json进行解析，实现了类似JavaBean和C#中`JsonConvert.SerializeObject`的效果，将c++结构体与Json数据结构进行了映射，使得json解析成c++对象这一过程对上层屏蔽，可以实现快速开发。
 
 <!--more-->
@@ -106,7 +104,7 @@ JSON数据如下：
 
 ```
    
-![json2cpp.png](https://upload-images.jianshu.io/upload_images/14735454-549c3dcaecfbec8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![json2cpp.png](https://camo.githubusercontent.com/f3c31b09611641f8dd072eca0f6e84bbc36d42a1/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f31343733353435342d353439633364636165636662656338622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430)
 
 
 ### 文件导入工程

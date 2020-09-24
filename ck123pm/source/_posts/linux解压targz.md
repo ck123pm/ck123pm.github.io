@@ -30,3 +30,12 @@ nautilus .
     - `cat /etc/issue`
     - `cat /etc/lsb-release`
     - `lsb_release -a`
+
+## linux按文件修改时间查看文件
+1. 降序
+`ls -lt`
+
+2. 升序
+`ls -lrt`
+
+
